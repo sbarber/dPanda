@@ -1,7 +1,7 @@
 dPanda
 ======
 
-# distributed Panda
+## distributed Panda
 OSX Menubar app that will play sounds. *This is currently only the client piece.* Requires RubyMotion v2.x+
 
 ## Usage
