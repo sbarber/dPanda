@@ -1,0 +1,2 @@
+FIREBASE_URL  = 'https://blahblahblah.firebaseio.com'
+FIREBASE_AUTH = 'whateverkeyhere'

@@ -1,0 +1,8 @@
+TODO:
+- properly play a sound on OSX (replace afplay)
+- text to speech!
+- file sync script between current panda script and s3 bucket
+- non-blocking download and play
+- detect if file exists on the s3 url (bubblewrap HTTP lib)
+- detect if we have file already downloaded
+- proper tests lol
