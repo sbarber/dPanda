@@ -1,2 +1,3 @@
-FIREBASE_URL  = 'https://blahblahblah.firebaseio.com'
-FIREBASE_AUTH = 'whateverkeyhere'
+FIREBASE_URL    = 'https://blahblahblah.firebaseio.com'
+FIREBASE_AUTH   = 'whateverkeyhere'
+CLIP_URL_PREFIX = 'http://sound.clips.url.here/clips'

@@ -32,7 +32,7 @@ class AppDelegate
   def playAudio(clip_name)
     ap clip_name
     # Cringeworthy code below
-    `curl -s http://cp.insops.net/panda/#{clip_name} -o /tmp/dPanda_#{clip_name} && afplay -t 5 /tmp/dPanda_#{clip_name}`
+    `curl -s #{CLIP_URL_PREFIX}/#{clip_name} -o /tmp/dPanda_#{clip_name} && afplay -t 5 /tmp/dPanda_#{clip_name}`
   end
 
   def testAudioAction
