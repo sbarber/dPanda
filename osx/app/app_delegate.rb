@@ -30,9 +30,16 @@ class AppDelegate
   end
 
   def playAudio(clip_name)
-    ap clip_name
-    # Cringeworthy code below
-    `curl -s #{CLIP_URL_PREFIX}/#{clip_name} -o /tmp/dPanda_#{clip_name} && afplay -t 5 /tmp/dPanda_#{clip_name}`
+    url = "#{CLIP_URL_PREFIX}/#{clip_name}"
+
+    # Verify url exists
+    BW::HTTP.get(url) do |response|
+      if response.status_code == 200
+        # FIXME: THIS IS A MAJOR HACK JOB
+        `curl -s #{url} -o /tmp/dPanda_#{clip_name} && afplay -t 5 /tmp/dPanda_#{clip_name}`
+      end
+    end
+
   end
 
   def testAudioAction
